@@ -1,0 +1,115 @@
+
+@media only screen and (min-width:0px) and (max-width:576px)
+
+{
+
+
+    /* header section responsive css */
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        overflow:scroll; /* Prevent body from scrolling */
+    }
+
+
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: -100%; /* Hide nav initially */
+        width: 100%;
+        height: 100%;
+        background-color:#007DFC;
+        transition: left 1s ease-in-out; /* Smooth transition for the sliding effect */
+        z-index: 1000; /* Ensure the nav is above other elements */
+    }
+
+   nav ul>li 
+   {
+    display:block;
+    color:white !important;
+    padding:1rem  0 2rem 0;
+    font-size:1.2rem;
+    border-bottom:1px solid rgb(123, 122, 122);
+    font-weight: bolder;
+
+   }
+
+   nav .fa-xmark
+   {
+    color:white;
+    display:block !important;
+    position:absolute;
+    right:1rem;
+    top:2rem;
+    font-size:2rem;
+   }
+
+   nav ul
+   {
+    width:100%;
+    height:90%;
+
+   }
+
+   nav ul>li>a 
+   {
+    color:white !important;
+   }
+
+  nav ul li input 
+  {
+    border-bottom:0rem;
+    height:3rem;
+    
+  } 
+
+  nav ul li:last-child
+  {
+    border-bottom:0px;
+  }
+
+
+
+
+    .header_title
+    {
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        width:100% !important;
+    }
+
+
+    .header_title>i 
+    {
+        font-size:2rem;
+        color:grey;
+    }
+
+
+    
+/* contact us form responsive css */
+
+
+.contact_form_child_right_box
+{
+    width:70rem !important;
+}
+
+.footer_child_content_box1
+{
+    height:10rem;
+}
+
+
+
+.footer_child_content_box1 a i 
+{
+padding-left:1rem !important;
+
+}
+    
+}
+

@@ -1,0 +1,549 @@
+
+/* root css */
+
+
+:root
+{
+    --color1:#F5FAFF;
+    --color2:#007DFC;
+    --color3:#5A5A5A;
+    --color4:white;
+    --padding1:3rem 0 3rem 0;
+    
+}
+
+/* main css start from here */
+
+/* universal selector */
+
+*
+{
+    padding:0rem;
+    margin:0rem;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+ body
+{
+    font-size:10px;  /* 1rem = 10px */
+
+
+}
+
+/* Header css start from here */
+
+header 
+{
+    background-color:var(--color4);
+    height:7rem;
+    display:grid;
+    place-items:center;
+    position:sticky;
+    top:0rem;
+    z-index:4;
+    box-shadow: rgba(33, 35, 38, 0.4) 0px 10px 10px -10px;
+
+
+}
+
+
+
+.header_child
+{
+    padding:0rem !important;
+    height:7rem ;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+   
+}
+
+.logo_img
+{
+    padding:0rem !important;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.logo_img img
+{
+width:12rem;
+height:7rem;
+}
+
+nav 
+{
+    text-transform: capitalize;
+    display:flex;
+    justify-content:flex-end ;
+    align-items:flex-end ;
+    padding: 0rem ;
+
+}
+
+nav ul 
+{
+    padding:0rem !important;
+}
+
+nav>i 
+{
+   display:none !important;
+}
+
+nav ul>li 
+{
+    display:inline-block;
+    font-size:1rem;
+    padding-left:2rem;
+    color:black !important;
+    font-weight: bolder;
+    text-transform: uppercase;
+
+}
+
+nav ul>li a
+{
+   text-decoration:none;
+   color:black !important;
+
+
+}
+
+nav ul>li input 
+{
+    border:none;
+    height:2rem;
+    background-color:rgb(217, 218, 220);
+    border-radius:5px;
+    padding-left:1rem;
+}
+
+/* Hero section css start from here */
+
+
+.overlay
+{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color:rgba(2, 2, 57, 0.5);
+    z-index:1;
+}
+
+.hero_section
+{
+    background-image:url('Assest/hero.png');
+    height:30rem;
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+    scroll-margin-top:120px; /* For additional space if necessary */
+
+}
+
+
+.hero_section_child
+{
+    z-index: 2;
+    color:white;
+    padding:0rem !important;
+    height:auto;
+
+}
+
+.hero_section_child_left
+{
+padding:0rem !important;
+text-transform: capitalize;
+z-index:9999;
+}
+
+
+.hero_section_child_left>p 
+{
+    font-size:1.2rem;
+    color:var(--color1);
+    padding-top:1rem;
+    font-family: Open Sans, Calibri, Helvetica, sans-serif;;
+}
+
+.hero_section_child_left>button 
+{
+width:9rem;
+height:3rem;
+background-color:var(--color2);
+border:none;
+border-radius:2rem;
+font-size:1rem;
+text-transform:capitalize;
+color:white;
+margin-top:1rem;
+}
+
+/* Service section css start from here */
+
+.service_section
+{
+    padding:var(--padding1);
+    height:auto;
+    scroll-margin-top:110px; /* For additional space if necessary */
+
+}
+
+.service_section_child_subchild
+{
+    padding:0rem !important;
+    height:auto;
+}
+
+.service_section_child
+{
+    padding:0rem !important;
+    height:auto;
+
+}
+
+.service_section_child_subchild_left,.service_section_child_subchild_right
+{
+
+    padding:0rem !important;
+
+}
+
+.service_section_child_subchild_right_content h5 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:2rem;
+}
+
+
+
+
+.service_section_child_subchild_left>img 
+{
+    width:100%;
+    height:100%;
+}
+
+.service_section_child_subchild_right
+{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+.service_section_child_subchild_right_content
+{
+    width:35rem;
+    height:auto;
+    
+}
+
+.service_section_child_subchild_right_content>p 
+{
+    font-size:1rem;
+    font-family: Open Sans, Calibri, Helvetica, sans-serif;
+    text-transform: capitalize;
+    color:var(--color3);
+}
+
+.service_section_child_subchild_right_content>button 
+{
+    width:5rem;
+    height:2rem;
+    border:none;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size:0.6rem !important;
+}
+
+.btn_grp>button 
+{
+    border-radius:1rem;
+    background-color:var(--color2);
+    color:white;
+    width:7rem !important;
+    height:2rem;
+    border:none;
+    color:white;
+    font-size:0.9rem;
+}
+
+.service_section_child_subchild_right>img 
+{
+width:100%;
+height:100%;
+}
+
+/* gallery section css */
+
+.gallery_section
+{
+    padding:var(--padding1);
+    background-color:var(--color1);
+    scroll-margin-top:110px; /* For additional space if necessary */
+
+}
+
+.gallery_section_child_card_left 
+{
+    background-image:url("Assest/s1.png");
+    background-size: cover;
+    width:100%;
+    height:20rem;
+}
+
+.gallery_section_child_card_center 
+{
+    background-image:url("Assest/s2.png");
+    background-size: cover;
+    width:100%;
+    height:20rem;
+}
+
+.gallery_section_child_card_right 
+{
+    background-image:url("Assest/s3.png");
+    background-size: cover;
+    width:100%;
+    height:20rem;
+}
+
+.gallery_section_child_card
+{
+    height:auto;
+   
+}
+
+.gallery_section_child_header_left>button 
+{
+    width:5rem;
+    height:2rem;
+    border:none;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size:0.6rem !important;
+    border-radius:1rem;
+    background-color: #dbeaf9;
+}
+
+.gallery_section_child_header_left>button:nth-child(1)
+{
+   
+    background-color:var(--color2);
+    color:white;
+}
+
+.gallery_section_child_header_right>button 
+{
+    width:2rem;
+    height:2rem;
+    background-color:var(--color2);
+    color:white;
+    border-radius:50%;
+    border:none;
+    
+
+}
+
+.gallery_section_child_header_right>button:nth-child(1)
+{
+    background-color:var(--color3);
+}
+
+
+
+/* contact us form css start from here */
+
+.contact_form
+{
+    padding:var(--padding1);
+    scroll-margin-top:110px; /* For additional space if necessary */
+
+
+}
+
+.contact_form_child
+{
+    height:auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius:1rem;
+
+}
+
+.contact_form_child_left
+{
+    background-color: var(--color2);
+    color:white;
+    height:25rem;
+    border-radius:1rem;
+    text-transform: capitalize;
+    padding:2rem !important;
+}
+
+.contact_form_child_left_content
+{
+    display:flex;
+    justify-content:space-between;
+}
+
+.contact_form_child_left_content>a 
+{
+    text-decoration: none;
+    color:white;
+}
+
+.contact_form_child_left_content>p 
+{
+    padding-left:5rem;
+}
+
+.contact_form_child_right_box
+{
+    width:50%;
+    height:auto;
+    text-transform: capitalize;
+}
+
+.contact_form_child_right_box>label 
+{
+    padding-top:1rem;
+    color:grey;
+}
+
+.contact_form_child_right_box>input 
+{
+    width:15rem;
+    border-bottom:1px solid grey !important;
+    margin-top:1rem;
+    border:none;
+    outline: none;
+}
+
+.contact_form_child_right_box>textarea 
+{
+    border:none;
+    border-bottom:1px solid grey;
+    outline:none;
+}
+
+.contact_form_child_right_box>button 
+{
+    width:10rem;
+    height:2.5rem;
+    background-color:var(--color2);
+    border:none;
+    outline:none;
+    color:white;
+    border-radius:2rem;
+    text-transform: capitalize;
+}
+
+.contact_form_title>p 
+{
+    color:grey;
+}
+
+
+/* footer section css start from here */
+
+footer 
+{
+    padding:var(--padding1);
+    background-color:black;
+}
+
+.footer_child_content_box>ul>li a
+{
+    text-decoration:none;
+    color:rgb(141, 138, 138);
+}
+
+
+.footer_child_content_box>img 
+{
+    width:15rem;
+    height:7rem;
+}
+
+.footer_child_content_box>ul 
+{
+    margin-top:1rem;
+
+}
+
+.footer_child_content_box>ul>li 
+{
+    display:inline-block;
+    list-style:none;
+    padding: 1rem;
+    text-transform: capitalize;
+}
+
+.footer_child_content_box>i 
+{
+    padding:1rem;
+    font-size:1.2rem;
+}
+
+.footer_child_content_box_subchild_left>ul>li 
+{
+display:inline-block;
+text-transform: capitalize;
+padding:1rem;
+color:white;
+
+}
+
+.footer_child_content_box_subchild_right
+{
+    display:grid;
+    place-items:center;
+}
+
+
+.footer_child_content_box>a
+{
+    text-decoration: none;
+    color:white;
+    font-size:2rem;
+    padding:2rem;
+}
+
+.footer_child_content_box1
+{
+    padding-bottom:2rem;
+    height:5rem;
+    position: relative;
+    top:1rem;
+
+
+}
+
+.footer_child_content_box_subchild_left
+{
+    display:grid;
+    place-items:center;
+    padding:0rem !important;
+}
+
+.footer_child_content_box_subchild_right
+{
+    color:white;
+    padding:0rem !important;
+
+}
+
+
+
